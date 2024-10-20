@@ -1,0 +1,305 @@
+@font-face {
+    font-family: "inter";
+    src: url("/fonts/inter.ttf") format('truetype');
+}
+@font-face {
+    font-family: "zenmaru";
+    src: url("/fonts/ZenMaruGothic-Black.ttf") format('truetype');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+}
+
+.left_nav {
+    width: 25%;
+    max-width: 400px;
+    min-width: 100px;
+    align-items: left;
+    height: 100%;
+    border-right: 2px solid rgba(180, 180, 180, 1);
+    background-color: rgba(40, 40, 40, 1);
+}
+
+.main_contents {
+    width: 80%;
+    align-items: right;
+    height: 100%;
+    background-color: rgba(40, 40, 40, 1);
+}
+
+/* left navigation header */
+
+.left_nav .header {
+    display: flex;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.drift_icon_nav {
+    height: 70px;
+    width: 70px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 59px;
+    background: #282828;
+    box-shadow:  7px 7px 14px #1b1b1b,
+    -7px -7px 14px #353535;
+}
+
+.drift_icon_nav img {
+    margin: 5px 5px 5px 5px;
+    height: 60px;
+    width: 60px;
+}
+
+.left_nav_header_txt {
+    color: white;
+    font-family: inter;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    text-align: top;
+    margin-left: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    white-space: nowrap;
+}
+
+.header_text {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.left_nav_header_description {
+    color: white;
+    font-family: inter;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: -3px;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+
+.left_nav .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding: 10px auto;
+    gap: 50px;
+}
+
+/* left navigation menu home */
+.home {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.home a {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    border-radius: 31px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 30px 15px 40px #1a1a1a,
+                -30px -15px 40px #383838;
+}
+
+.home_icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(623%) hue-rotate(159deg) brightness(109%) contrast(109%);
+}
+
+.home_txt {
+    width: auto;
+    padding-left: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+/* left navigation menu search */
+.search {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.search a {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    border-radius: 31px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 30px 15px 40px #1a1a1a,
+                -30px -15px 40px #383838;
+}
+
+.search_icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(623%) hue-rotate(159deg) brightness(109%) contrast(109%);
+}
+
+.search_txt {
+    width: auto;
+    padding-left: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+/* left navigation menu notification */
+.notification {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.notification a {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    border-radius: 31px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 30px 15px 40px #1a1a1a,
+                -30px -15px 40px #383838;
+}
+
+.notification_icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(623%) hue-rotate(159deg) brightness(109%) contrast(109%);
+}
+
+.notification_txt {
+    width: auto;
+    padding-left: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+/* left navigation menu bookmark */
+.bookmark {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.bookmark a {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    border-radius: 31px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 30px 15px 40px #1a1a1a,
+                -30px -15px 40px #383838;
+}
+
+.bookmark_icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(623%) hue-rotate(159deg) brightness(109%) contrast(109%);
+}
+
+.bookmark_txt {
+    width: auto;
+    padding-left: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+/* left navigation menu other */
+.other {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.other a {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    border-radius: 31px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 30px 15px 40px #1a1a1a,
+                -30px -15px 40px #383838;
+}
+
+.other_icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(623%) hue-rotate(159deg) brightness(109%) contrast(109%);
+}
+
+.other_txt {
+    width: auto;
+    padding-left: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+}
